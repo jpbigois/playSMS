@@ -144,7 +144,7 @@ switch (_OP_) {
 		$add_datetime_timezone = ($add_datetime_timezone ? $add_datetime_timezone : core_get_timezone());
 		
 		// get language options
-		$lang_list = '';
+		$lang_list = [];
 		for ($i = 0; $i < count($core_config['plugins']['list']['language']); $i++) {
 			$language = $core_config['plugins']['list']['language'][$i];
 			$c_language_title = $plugin_config[$language]['title'];

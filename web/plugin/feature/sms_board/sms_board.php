@@ -180,7 +180,7 @@ switch (_OP_) {
 	
 	case "sms_board_add":
 		if (auth_isadmin()) {
-			$select_reply_smsc = "<tr><td>" . _('SMSC') . "</td><td>" . gateway_select_smsc('smsc') . "</td></tr>";
+			$select_reply_smsc = "<tr><td>" . _('SMSC') . "</td><td>" . gateway_select_smsc('smsc', null) . "</td></tr>";
 		}
 		
 		$content = _dialog() . "

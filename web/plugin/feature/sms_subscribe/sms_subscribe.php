@@ -123,7 +123,7 @@ switch (_OP_) {
 	case "sms_subscribe_add":
 		$max_length = $core_config['main']['max_sms_length'];
 		if (auth_isadmin()) {
-			$select_reply_smsc = "<tr><td>" . _('SMSC') . "</td><td>" . gateway_select_smsc('smsc') . "</td></tr>";
+			$select_reply_smsc = "<tr><td>" . _('SMSC') . "</td><td>" . gateway_select_smsc('smsc', null) . "</td></tr>";
 		}
 		$add_forward_param = 'BC';
 		$select_durations = _select('add_duration', $plugin_config['sms_subscribe']['durations']);

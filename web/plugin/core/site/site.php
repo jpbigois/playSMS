@@ -61,7 +61,7 @@ switch (_OP_) {
 		$options['themes_module'] = _options($core_config['plugins']['list']['themes'], $site_config['themes_module']);
 		
 		// get language options
-		$lang_list = '';
+		$lang_list = [];
 		for ($i = 0; $i < count($core_config['plugins']['list']['language']); $i++) {
 			$language = $core_config['plugins']['list']['language'][$i];
 			$c_language_title = $plugin_config[$language]['title'];

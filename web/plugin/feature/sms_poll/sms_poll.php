@@ -199,7 +199,7 @@ switch (_OP_) {
 		$add_poll_access_code = md5(_PID_);
 		
 		if (auth_isadmin()) {
-			$select_reply_smsc = "<tr><td>" . _('SMSC') . "</td><td>" . gateway_select_smsc('add_smsc') . "</td></tr>";
+			$select_reply_smsc = "<tr><td>" . _('SMSC') . "</td><td>" . gateway_select_smsc('add_smsc', null) . "</td></tr>";
 		}
 		
 		$content = _dialog() . "

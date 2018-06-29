@@ -82,7 +82,7 @@ switch (_OP_) {
 		break;
 	case "sms_quiz_add" :
 		if (auth_isadmin()) {
-			$select_reply_smsc = "<tr><td>" . _('SMSC') . "</td><td>" . gateway_select_smsc('smsc') . "</td></tr>";
+			$select_reply_smsc = "<tr><td>" . _('SMSC') . "</td><td>" . gateway_select_smsc('smsc', null) . "</td></tr>";
 		}
 		$content = _dialog() . "
 			<h2>" . _('Manage quiz') . "</h2>

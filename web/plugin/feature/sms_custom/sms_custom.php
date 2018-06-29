@@ -199,7 +199,7 @@ switch (_OP_) {
 		break;
 	case "sms_custom_add":
 		if (auth_isadmin()) {
-			$select_reply_smsc = "<tr><td>" . _('SMSC') . "</td><td>" . gateway_select_smsc('add_smsc') . "</td></tr>";
+			$select_reply_smsc = "<tr><td>" . _('SMSC') . "</td><td>" . gateway_select_smsc('add_smsc', null) . "</td></tr>";
 		}
 		
 		$content .= _dialog() . "
